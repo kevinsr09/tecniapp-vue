@@ -3,17 +3,29 @@ export default{
   name:"Header"
 
 }
+
+
+/*
+ background-color: #444343;
+  border-radius: 0.5rem;
+  transition: background-color 0.1s ease-in-out;
+  font-size: 1.5rem;
+  align-items: center;
+*/
 </script>
 
 <template>
   <header>
+    
     <div class="header-div logo">TecniApp</div>
+
     <div class="header-div search">
-      <form action="" class="search-form">
-        <input type="text" class="search-text">
-        <input type="submit" class="search-submit">
+      <form action="" class="form-search">
+        <input type="text" placeholder="  Cuentanos que te sucedio" class="form-search-text">
+        <button type="submit" class="form-search-submit">b</button>
       </form> 
     </div>
+    
     <div class="header-div login">login</div>
   </header>
 </template>
@@ -36,37 +48,66 @@ header{
   align-items: center;
 }
 
+.login{
+  font-family: 'Carter One', sans-serif;
+  font-size: clamp(1.2rem, 5vw, 2rem);
+  justify-content: end;
+  padding-right: 4rem;  
+}
+
 .logo{
+  font-family: 'Carter One', sans-serif;
+  font-size: clamp(1.2rem, 5vw, 2rem);
   justify-content: start;
-  margin-left: 20px;
+  padding-left: 4rem;
+
 }
 .search{
   width: 50%;
+  height: 100%;
 }
 
-.search-form{
+.form-search{
   width: 80%;
   height: 40px;
-  background-color: #444343;
-  border-radius: 0.5rem;
-  transition: background-color 0.1s ease-in-out;
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  border-radius: 0.6rem;
+  
 }
-.search-text{
-  width: 90%;
-  height: 95%;
-  background-color: transparent;
-  border-radius: 0.5rem;
-  transition: background-color 0.1s ease-in-out;
-  font-size: 1.5rem;
-  border: none;
 
+.form-search-submit{
+  width: 7%;
+  height: 100%;
+  background-color: var(--second-bg-color);
+  border-radius: 0 0.5rem 0.5rem 0;
+  transition: background-color 0.1s ease-in-out;
+  border: none;
 }
-.search-form:hover{
-  background-color: #f1ebeb;
+.form-search-text{
+  width: 93%;
+  height: 100%;
+  display: block;
+  background-color: var(--second-bg-color);
+  border-radius: 0.5rem 0 0 0.5rem;
+  transition: background-color 0.1s ease-in-out;
+  border: none;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
+.form-search:hover {
+  border: .2rem solid var(--second-bg-color)
+}
+
+.form-search:hover *{
+  background-color: white;
+}
+
+
 
 
 
 </style>
+
+
+

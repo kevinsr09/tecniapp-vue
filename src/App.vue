@@ -14,6 +14,27 @@ export default{
 
 <style>
 
+@font-face {
+  font-family: 'Carter One';
+  src: 
+  url('fonts/CarterOne-Regular.woff2') format('woff2'),
+  url('fonts/CarterOne-Regular.woff') format('woff'),
+  url('fonts/CarterOne-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+
+
+
+:root{
+  --second-bg-color: #444343;
+}
+
+
+
+
+
+
 html{
   box-sizing: border-box;
 }
