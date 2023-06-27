@@ -27,7 +27,7 @@ export default{
 
 
 :root{
-  --second-bg-color: #444343;
+  --second-bg-color: #303134;
 }
 
 

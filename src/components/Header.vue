@@ -21,7 +21,7 @@ export default{
 
     <div class="header-div search">
       <form action="" class="form-search">
-        <input type="text" placeholder="  Cuentanos que te sucedio" class="form-search-text">
+        <input type="text" placeholder="Cuentanos que te sucedio" class="form-search-text">
         <button type="submit" class="form-search-submit">b</button>
       </form> 
     </div>
@@ -50,14 +50,14 @@ header{
 
 .login{
   font-family: 'Carter One', sans-serif;
-  font-size: clamp(1.2rem, 5vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   justify-content: end;
   padding-right: 4rem;  
 }
 
 .logo{
   font-family: 'Carter One', sans-serif;
-  font-size: clamp(1.2rem, 5vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   justify-content: start;
   padding-left: 4rem;
 
@@ -80,6 +80,7 @@ header{
 .form-search-submit{
   width: 7%;
   height: 100%;
+  color: white;
   background-color: var(--second-bg-color);
   border-radius: 0 0.5rem 0.5rem 0;
   transition: background-color 0.1s ease-in-out;
@@ -89,19 +90,19 @@ header{
   width: 93%;
   height: 100%;
   display: block;
+  color: white;
   background-color: var(--second-bg-color);
   border-radius: 0.5rem 0 0 0.5rem;
   transition: background-color 0.1s ease-in-out;
   border: none;
   font-size: clamp(1rem, 2vw, 1.5rem);
+  padding-left: 1rem;
 }
 .form-search:hover {
   border: .2rem solid var(--second-bg-color)
 }
 
-.form-search:hover *{
-  background-color: white;
-}
+
 
 
 
