@@ -1,15 +1,18 @@
 <script>
-import Prueba from './components/Header.vue'
+import MainHeader from './components/MainHeader.vue'
+import MainAside from './components/MainAside.vue'
 export default{
   name:"App",
   components:{
-    Prueba,
+    MainHeader,
+    MainAside,
   }
 }
 </script>
 
 <template>
-  <Prueba />
+  <MainHeader />
+  <MainAside />
 </template>
 
 <style>
@@ -23,11 +26,8 @@ export default{
   font-display: swap;
 }
 
-
-
-
 :root{
-  --second-bg-color: #303134;
+  --second-bg-color: #444343;
 }
 
 
@@ -49,6 +49,11 @@ body{
   padding: 0;
   margin: 0;
   background-color:rgb(24, 22, 22);
+}
+
+ul{
+  padding:0;
+  margin:0;
 }
 
 </style>
