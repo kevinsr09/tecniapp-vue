@@ -1,6 +1,17 @@
 <script>
 export default{
   name:"MainHeader",
+  data(){
+    return {
+      search:"",
+    }
+  },
+  methods:{
+    alerta(){
+      alert(this.search)
+
+    }
+  }
 
 }
 
@@ -20,13 +31,17 @@ export default{
     <div class="header-div logo"><span>TecniApp</span></div>
 
     <div class="header-div search">
-      <form action="" class="form-search">
-        <input type="text" placeholder="Cuentanos que te sucedio" class="form-search-text">
+    
+      <form action="" @submit.prevent="alerta" class="form-search">
+        
+        <input type="text" v-model="search" placeholder="Cuentanos que te sucedio" class="form-search-text">
+        
         <button type="submit" class="form-search-submit">
           <img src="svg/search.svg" alt="svg">
-          
         </button>
+      
       </form> 
+    
     </div>
     
     <div class="header-div login">Login</div>

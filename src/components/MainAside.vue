@@ -11,16 +11,13 @@ export default {
 
     <ul>
 
-      <li class="aside-li-item"><a>1</a></li>
-      <li class="aside-li-item"><a>2</a></li>
-      <li class="aside-li-item"><a>3</a></li>
-      <li class="aside-li-item"><a>4</a></li>
-      <li class="aside-li-item"><a>5</a></li>
-      <li class="aside-li-item"><a>6</a></li>
-      <li class="aside-li-item"><a>7</a></li>
-      <li class="aside-li-item"><a>8</a></li>
-      <li class="aside-li-item"><a>9</a></li>
-      <li class="aside-li-item"><a>1</a></li>
+      <li class="aside-li-item"><a>reparacion de televisores</a></li>
+      <li class="aside-li-item"><a>reparacion de neveras</a></li>
+      <li class="aside-li-item"><a>reparacion de estufas</a></li>
+      <li class="aside-li-item"><a>reparacion de lavadoras</a></li>
+      <li class="aside-li-item"><a>reparacion de computadores</a></li>
+      <li class="aside-li-item"><a>reparacion de telefonos</a></li>
+      <li class="aside-li-item"><a>accesorios para telefonos</a></li>
     </ul>
 
 
