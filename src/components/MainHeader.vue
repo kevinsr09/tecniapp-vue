@@ -1,4 +1,7 @@
 <script>
+
+//export const categoriesSearch = searchCategories
+
 export default{
   name:"MainHeader",
   data(){
@@ -10,24 +13,6 @@ export default{
   },
 
   computed:{
-    
-    optionsUser(){
-
-      return{
-        "model": "gpt-3.5-turbo",
-      "messages": [
-        {
-          "role": "system",
-          "content": `clasifica el problema del usuario en las siguientes categorias: reparacion de televisores, reparacion de neveras, reparacion de estufas, reparacion de lavadoras, reparacion de computadores, reparacion de telefonos, accesorios para telefonos. solo respondes con las categorias en un array`
-        },
-        {
-          "role": "user",
-          "content": `${this.userProblem}`
-        }
-      ]
-      }
-      
-    },
 
     optionsSend(){
 
@@ -38,7 +23,10 @@ export default{
           "messages": [
             {
               "role": "system",
-              "content": `clasifica el problema del usuario en las siguientes categorias: reparacion de televisores, reparacion de neveras, reparacion de estufas, reparacion de lavadoras, reparacion de computadores, reparacion de telefonos, accesorios para telefonos. solo respondes con las categorias en un array`
+              "content": `clasifica el problema del usuario en las siguientes categorias: 
+              reparacion de televisores, reparacion de neveras, reparacion de estufas, 
+              reparacion de lavadoras, reparacion de computadores, reparacion de telefonos, 
+              accesorios para telefonos. solo respondes con las categorias en un array`
             },
             {
               "role": "user",
@@ -50,7 +38,7 @@ export default{
         headers: {
         
           "Content-Type": "application/json",
-          "Authorization": "Bearer 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"
+          "Authorization": "Bearer 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"
         }
       }
       
