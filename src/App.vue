@@ -1,18 +1,29 @@
 <script>
 import MainHeader from './components/MainHeader.vue'
 import MainAside from './components/MainAside.vue'
+import CardItem from './components/CardItem.vue'
+
 export default{
   name:"App",
   components:{
     MainHeader,
     MainAside,
+    CardItem,
   }
 }
 </script>
 
 <template>
   <MainHeader />
-  <MainAside />
+  <main class="main">
+  
+    <MainAside />
+    <CardItem />
+
+  </main>
+
+  
+    
 </template>
 
 <style>
@@ -51,9 +62,19 @@ body{
   background-color:rgb(24, 22, 22);
 }
 
+
+
 ul{
   padding:0;
   margin:0;
 }
 
+
+
+
+.main{
+
+  display: flex;
+  
+}
 </style>

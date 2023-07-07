@@ -1,4 +1,6 @@
-export const data = [
+export function data() {
+  
+  return [
   {
     id: 1,
     name: 'kevin',
@@ -70,4 +72,13 @@ export const data = [
     category: 'reparacion de televisores',
     img: 'https://via.placeholder.com/200x200',
   },
-] 
+ 
+  {
+    id: 11,
+    name: 'godoy',
+    category: 'reparacion de televisores',
+    img: 'https://via.placeholder.com/200x200',
+  },
+]
+
+}
