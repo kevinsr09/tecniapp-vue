@@ -1,6 +1,5 @@
 <script>
 
-//export const categoriesSearch = searchCategories
 
 export default{
   name:"MainHeader",

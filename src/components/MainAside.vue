@@ -28,6 +28,9 @@ export default {
 <style>
 
 aside{
+  
+
+  
   width: clamp(200px, 22vw,250px);
   border-right: 1px dashed #747474;
   height: calc(100vh - 70px);

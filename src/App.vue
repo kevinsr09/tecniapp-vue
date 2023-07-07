@@ -1,14 +1,22 @@
 <script>
 import MainHeader from './components/MainHeader.vue'
 import MainAside from './components/MainAside.vue'
-import CardItem from './components/CardItem.vue'
+import ListItem from './components/ListItem.vue'
 
 export default{
   name:"App",
   components:{
     MainHeader,
     MainAside,
-    CardItem,
+    ListItem,
+  },
+  data(){
+    return{
+
+    }
+  },
+  computed:{
+    
   }
 }
 </script>
@@ -16,9 +24,16 @@ export default{
 <template>
   <MainHeader />
   <main class="main">
-  
-    <MainAside />
-    <CardItem />
+    
+      
+      <MainAside />
+
+
+      <section class="content">
+
+        <ListItem></ListItem>
+                
+      </section>
 
   </main>
 
@@ -69,12 +84,21 @@ ul{
   margin:0;
 }
 
+.content{
+  width: calc(100% - clamp(200px, 22vw,250px));
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+}
 
+
+.mainaside{
+  width: 300px;
+}
 
 
 .main{
 
   display: flex;
-  
+  flex-wrap: wrap;
 }
 </style>
