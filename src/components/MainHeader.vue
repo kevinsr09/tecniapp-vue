@@ -1,12 +1,15 @@
 <script>
 
+import { apiSend } from '../data/api_send'
 
 export default{
+
   name:"MainHeader",
+
   data(){
     return {
       userProblem:"",
-      searchCategories:""
+      searchCategories:"",
     }      
     
   },
@@ -15,47 +18,31 @@ export default{
 
     optionsSend(){
 
-      return{
-        method:'POST',
-        body: JSON.stringify({
-          "model": "gpt-3.5-turbo",
-          "messages": [
-            {
-              "role": "system",
-              "content": `clasifica el problema del usuario en las siguientes categorias: 
-              reparacion de televisores, reparacion de neveras, reparacion de estufas, 
-              reparacion de lavadoras, reparacion de computadores, reparacion de telefonos, 
-              accesorios para telefonos. solo respondes con las categorias en un array`
-            },
-            {
-              "role": "user",
-              "content": `${this.userProblem}`
-            }
-          ]
-        }),
-
-        headers: {
-        
-          "Content-Type": "application/json",
-          "Authorization": "Bearer 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"
-        }
-      }
-      
+      return apiSend()
     }
-
     
   },
 
   methods:{
     userCategories(){
-      console.log(this.optionsSend)
       fetch('https://api.openai.com/v1/chat/completions', this.optionsSend)
         .then(res => res.json())
         .then(data =>  this.searchCategories = data.choices[0].message.content)
       
         setTimeout(()=>{console.log(this.searchCategories)},2000)
     },
+
+    userCategoriesTest(){
+      this.userCategories = this.userProblem
+    },
+  },
+
+  watch:{
+    userCategories: function(){
+      this.$root.$emit('send', this.userCategories)
+    }
   }
+
 }
 
 
@@ -66,13 +53,15 @@ export default{
 
 
 <template>
+
   <header>
     
     <div class="header-div logo"><span>TecniApp</span></div>
 
     <div class="header-div search">
-    
-      <form action="" @submit.prevent="userCategories" class="form-search">
+      
+      <!--<form action="" @submit.prevent="userCategories" class="form-search">-->
+      <form action="" @submit.prevent="userCategoriesTest" class="form-search">
         
         <input type="text" v-model="userProblem" placeholder="Cuentanos que te sucedio" class="form-search-text">
         
@@ -147,7 +136,7 @@ header{
 }
 
 .form-search-submit{
-  width: 7%;
+  width: 10%;
   height: 100%;
   color: white;
   background-color: var(--second-bg-color);
@@ -157,12 +146,14 @@ header{
 }
 
 .form-search-submit img{
+
   width: 100%;
+  height: auto;
 }
 
 
 .form-search-text{
-  width: 93%;
+  width: 90%;
   height: 100%;
   display: block;
   color: white;
@@ -180,6 +171,5 @@ header{
   border: 1px dashed greenyellow
 }
 </style>
-
 
 
