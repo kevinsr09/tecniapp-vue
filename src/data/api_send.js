@@ -1,4 +1,4 @@
-export function apiSend(){
+export function apiSend(msg){
   return {
   method:'POST',
   body: JSON.stringify({
@@ -9,11 +9,11 @@ export function apiSend(){
         "content": `clasifica el problema del usuario en las siguientes categorias: 
         reparacion de televisores, reparacion de neveras, reparacion de estufas, 
         reparacion de lavadoras, reparacion de computadores, reparacion de telefonos, 
-        accesorios para telefonos. solo respondes con las categorias en un array`
+        accesorios para telefonos. solo respondes con la categoria`
       },
       {
         "role": "user",
-        "content": `${this.userProblem}`
+        "content": `${msg}`
       }
     ]
   }),
@@ -21,7 +21,7 @@ export function apiSend(){
   headers: {
   
     "Content-Type": "application/json",
-    "Authorization": "Bearer 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"
+    "Authorization": "Bearer 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"
   }
 }
 }

@@ -12,22 +12,27 @@ export default{
   },
   data(){
     return{
-
+      searchCategories:"",
     }
   },
   computed:{
-    
-  }
+  },
+
+  methods:{
+    setValues(category){
+      this.searchCategories = category
+    },
+  },
+
 }
 </script>
 
 <template>
-  <MainHeader />
+  <MainHeader @getValues="setValues" />
   <main class="main">
     
       
       <MainAside />
-
 
       <section class="content">
 

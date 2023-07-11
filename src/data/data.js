@@ -41,7 +41,7 @@ export function data() {
   {
     id: 6,
     name: 'fernando',
-    category: 'accesorios de telefonos',
+    category: 'accesorios para telefonos',
     img: 'https://via.placeholder.com/200x200',
   },
 

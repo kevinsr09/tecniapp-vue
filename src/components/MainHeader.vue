@@ -10,38 +10,28 @@ export default{
     return {
       userProblem:"",
       searchCategories:"",
-    }      
-    
+    }         
   },
 
   computed:{
-
     optionsSend(){
-
-      return apiSend()
+      return apiSend(this.userProblem)
     }
-    
   },
 
   methods:{
     userCategories(){
       fetch('https://api.openai.com/v1/chat/completions', this.optionsSend)
         .then(res => res.json())
-        .then(data =>  this.searchCategories = data.choices[0].message.content)
-      
-        setTimeout(()=>{console.log(this.searchCategories)},2000)
+        .then(data => {this.$emit("getValues", data.choices[0].message.content);console.log(data.choices[0].message.content)})
     },
 
-    userCategoriesTest(){
-      this.userCategories = this.userProblem
-    },
+    updateCategories(){
+     
+    }
   },
 
-  watch:{
-    userCategories: function(){
-      this.$root.$emit('send', this.userCategories)
-    }
-  }
+
 
 }
 
@@ -60,9 +50,9 @@ export default{
 
     <div class="header-div search">
       
-      <!--<form action="" @submit.prevent="userCategories" class="form-search">-->
-      <form action="" @submit.prevent="userCategoriesTest" class="form-search">
-        
+      <!--<form action="" @submit.prevent="updateCategories" class="form-search">-->
+      
+        <form action="" @submit.prevent="userCategories" class="form-search"> 
         <input type="text" v-model="userProblem" placeholder="Cuentanos que te sucedio" class="form-search-text">
         
         <button type="submit" class="form-search-submit">

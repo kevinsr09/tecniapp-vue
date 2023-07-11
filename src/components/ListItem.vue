@@ -9,8 +9,7 @@ export default{
 
   data(){
     return{
-      categories: 'reparacion de neveras',
-      categories2: ''
+     
     }
   },
   
@@ -24,9 +23,19 @@ export default{
     },
 
     listTecnicos(){
-      return this.tecnicos.filter(tec => tec.category === this.categories)
+      return this.tecnicos.filter(tec => tec.category === this.$root.searchCategories)
     }
   },
+
+  methods:{
+    añadirData(){
+      
+    }
+  },
+  mounted(){
+    console.log(this.$root.searchCategories)
+    
+  }
 
 }
 
