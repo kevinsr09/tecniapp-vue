@@ -1,24 +1,37 @@
 export function data() {
   
+
+  /*
+  {
+    'reparacion de computadores': '0010', 
+    'reparacion de telefonos': '0020',
+    'reparacion de televisores': '0040',
+    'reparacion de neveras': '0050', 
+    'reparacion de lavadoras': '0060', 
+    'reparacion de estufas': '0080',
+    'accesorios para telefonos': '1010',
+  } 
+  */
+
   return [
   {
     id: 1,
     name: 'kevin',
-    category: 'reparacion de telefonos',
+    category: '0020',
     img: 'https://via.placeholder.com/200x200',
   },
   
   {
     id: 2,
     name: 'stiven',
-    category: 'reparacion de televisores',
+    category: '0040',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 3,
     name: 'rugeles',
-    category: 'reparacion de estufas',
+    category: '0080',
     img: 'https://via.placeholder.com/200x200',
   },
 //reparacion de televisores, reparacion de neveras, reparacion de estufas,
@@ -27,56 +40,56 @@ export function data() {
   {
     id: 4,
     name: 'molina',
-    category: 'reparacion de telefonos',
+    category: '0020',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 5,
     name: 'luis',
-    category: 'reparacion de computadoras',
+    category: '0010',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 6,
     name: 'fernando',
-    category: 'accesorios para telefonos',
+    category: '1010',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 7,
     name: 'socadagui',
-    category: 'reparacion de lavadoras',
+    category: '0060',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 8,
     name: 'sara',
-    category: 'reparacion de neveras',
+    category: '0050',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 9,
     name: 'valentina',
-    category: 'reparacion de computadores',
+    category: '0010',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 10,
     name: 'godoy',
-    category: 'reparacion de televisores',
+    category: '0040',
     img: 'https://via.placeholder.com/200x200',
   },
  
   {
     id: 11,
     name: 'godoy',
-    category: 'reparacion de televisores',
+    category: '0040',
     img: 'https://via.placeholder.com/200x200',
   },
 ]

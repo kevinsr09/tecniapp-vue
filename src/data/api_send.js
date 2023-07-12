@@ -6,10 +6,17 @@ export function apiSend(msg){
     "messages": [
       {
         "role": "system",
-        "content": `clasifica el problema del usuario en las siguientes categorias: 
-        reparacion de televisores, reparacion de neveras, reparacion de estufas, 
-        reparacion de lavadoras, reparacion de computadores, reparacion de telefonos, 
-        accesorios para telefonos. solo respondes con la categoria`
+        "content": `clasifica el problema del usuario y me respondes solo con el codigo de la categoria:
+        {
+          'reparacion de computadores': '0010', 
+          'reparacion de telefonos': '0020',
+          'reparacion de televisores': '0040',
+          'reparacion de neveras': '0050', 
+          'reparacion de lavadoras': '0060', 
+          'reparacion de estufas': '0080',
+          'accesorios para telefonos': '1010',
+        }
+        `
       },
       {
         "role": "user",
@@ -21,7 +28,7 @@ export function apiSend(msg){
   headers: {
   
     "Content-Type": "application/json",
-    "Authorization": "Bearer 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"
+    "Authorization": "Bearer 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"
   }
 }
 }
