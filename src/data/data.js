@@ -16,82 +16,204 @@ export function data() {
   return [
   {
     id: 1,
-    name: 'kevin',
-    category: '0020',
+    nombreTaller: 'reparaciones JL',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
+    empleados:[
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'reparaciones',
+      },
+      {
+        nombre: 'stiven',
+        cargo: 'assesor',
+        area: 'oficina',
+      }
+    ],
+    categoria: '0020',
     img: 'https://via.placeholder.com/200x200',
   },
   
   {
     id: 2,
-    name: 'stiven',
-    category: '0040',
+    nombreTaller: 'TVTEC',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
+    empleados:[
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      },
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      }
+    ],
+    categoria: '0040',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 3,
-    name: 'rugeles',
-    category: '0080',
+    nombreTaller: 'Estufas Del Tolima SAS',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
+    empleados:[
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      },
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      }
+    ],
+    categoria: '0080',
     img: 'https://via.placeholder.com/200x200',
   },
-//reparacion de televisores, reparacion de neveras, reparacion de estufas,
-// reparacion de lavadoras, reparacion de computadores, reparacion de telefonos, 
-//accesorios para telefonos
+
   {
     id: 4,
-    name: 'molina',
-    category: '0020',
+    nombreTaller: 'La Casa Del Telefonos',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
+    empleados:[
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      },
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      }
+    ],
+    categoria: '0020',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 5,
-    name: 'luis',
-    category: '0010',
+    nombreTaller: 'RepCompu',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
+    empleados:[
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      },
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      }
+    ],
+    categoria: '0010',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 6,
-    name: 'fernando',
-    category: '1010',
+    nombreTaller: 'Multi Accesorios',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
+    empleados:[
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      },
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      }
+    ],
+    categoria: '1010',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 7,
-    name: 'socadagui',
-    category: '0060',
+    nombreTaller: 'Expertos Multimarca',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
+    empleados:[
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      },
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      }
+    ],
+    categoria: '0060',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 8,
-    name: 'sara',
-    category: '0050',
+    nombreTaller: 'Neve Tecnology',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
+    empleados:[
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      },
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      }
+    ],
+    categoria: '0050',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 9,
-    name: 'valentina',
-    category: '0010',
+    nombreTaller: 'ElectriMaster',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
+    empleados:[
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      },
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      }
+    ],
+    categoria: '0010',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 10,
-    name: 'godoy',
-    category: '0040',
+    nombreTaller: 'Reparacion De Televisores Saras',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
+    empleados:[
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      },
+      {
+        nombre: 'kevin',
+        cargo: 'tecnico',
+        area: 'Oficina',
+      }
+    ],
+    categoria: '0040',
     img: 'https://via.placeholder.com/200x200',
   },
- 
-  {
-    id: 11,
-    name: 'godoy',
-    category: '0040',
-    img: 'https://via.placeholder.com/200x200',
-  },
+  
 ]
 
 }

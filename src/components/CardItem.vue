@@ -10,12 +10,17 @@ export default {
       required: true,
     },
 
-    name: {
+    nombreTaller: {
       type: String,
       required: true,
     },
 
-    category: {
+    descripcion:{
+      type: String,
+      required : true,
+    },
+
+    categoria: {
       type: String,
       required: true,
     },
@@ -34,26 +39,18 @@ export default {
 
   <article >
 
-    <picture class="item">
-      
-      <img :src="img" alt="Imagen del negocio">
-    
+    <picture class="item-picture">
+      <img :src="img" class="picture-img" alt="Imagen del negocio">
     </picture>
     
-    <div class="item info">
-      <h3> {{ name }} </h3>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Modi assumenda tempore expedita.</p>
-      <p><span>Categoria:</span> {{ category }}</p>
 
+    <div class="item-info">
+    
+      <h3> {{ nombreTaller }} </h3>
+      <p class="description">{{ descripcion }}</p>
+      <p><span>Categoria:</span> {{ categoria }}</p>
       <div class="contact">
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Quod provident accusantium temporibus numquam voluptatibus libero qui 
-          est, molestias ab suscipit rerum.
-        </p>
-
+        <p>Contactos: </p>
       </div>
         
     </div>
@@ -68,70 +65,83 @@ export default {
 <style>
 
 article{
+
   width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
   height: 250px;
   padding: 10px;
-  gap: 20px;
-  transition: box-shadow 0.3s ease;
   border-radius: 1rem;
-  box-shadow: 1px 1px 1px #9a999950;
-  /*border: 1px dashed #747474;*/
+  overflow: hidden;
+
+  background-color: #313232;
+  box-shadow: 0px 0px 2px #9a999950;
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
+  transition: box-shadow 0.3s ease;
 }
 
 article:hover{
-  box-shadow: 3px 3px 8px #9a999950;
+
+  box-shadow: 0px 0px 12px #9a999980;
+
 }
 
 
-h3{
-  
-  color:white;
-}
+/* estilos de la picture*/
 
-img{
-  width: 250px;
-  height: 150px;
+.picture-img{
+
+  width: 100;
+  height: auto;
+
+  border-radius: .8rem;
+
   display: block;
-  border-radius: 1rem;
+
 }
 
-p{
-  color:white;
-}
 
-picture{
-  width: 30%;
-  height: 100%;
+.item-picture{
+  
+  height: 95%;
+  width: 35%;
   display: grid;
   place-content: center;
+  
+}
+
+
+/* estilos para la iformacion */
+
+.item-info{
+  
+  color:white;
+  width: 60%;
+  height: 95%;
 
 }
 
 
 
 
-.info{
-  color: white;
-  width: 70%;
-}
+.item-info h3{
 
-
-
-.info h3{
+  margin: 0;
   font-size:1.2rem;
-  margin-top:5px;
+  text-align: center;
+  text-transform: capitalize;
+  
+  color: greenyellow;
+
 }
 
 .info p{
+
   font-size: .8rem;;
-}
-
-
-
-.contact{
-
 
 }
 

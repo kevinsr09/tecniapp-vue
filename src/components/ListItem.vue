@@ -10,7 +10,14 @@ export default{
 
   data(){
     return{
-     
+
+    }
+  },
+
+  props:{
+    categoryList:{
+      type: String,
+      default: 'all'
     }
   },
   
@@ -28,24 +35,14 @@ export default{
     },
 
     listTecnicos(){
-      return this.tecnicos.filter(tec => tec.category === this.$root.searchCategories)
+        return (this.categoryList == "all") 
+        ? this.tecnicos 
+        : this.tecnicos.filter(tec => tec.categoria == this.categoryList)
     },
-
-
-    viewTecnicos(){
-      return this.listTecnicos.map(e => e.category = this.categories[`${this.$root.searchCategories}`]) 
-    }
   },
 
   methods:{
-    añadirData(){
-      
-    }
   },
-  mounted(){
-    console.log(this.$root.searchCategories)
-    
-  }
 
 }
 
@@ -54,7 +51,7 @@ export default{
 
 <template>
 
-  <CardItem v-for="tecnico of viewTecnicos" :key="tecnico.id" :name="tecnico.name" :category="tecnico.category" :id="tecnico.id" :img="tecnico.img"/> 
+  <CardItem v-for="tecnico of listTecnicos" :key="tecnico.id" :nombreTaller="tecnico.nombreTaller" :descripcion="tecnico.descripcion" :categoria="tecnico.categoria" :id="tecnico.id" :img="tecnico.img"/> 
 
 </template>
 

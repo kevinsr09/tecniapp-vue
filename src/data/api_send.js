@@ -16,6 +16,8 @@ export function apiSend(msg){
           'reparacion de estufas': '0080',
           'accesorios para telefonos': '1010',
         }
+
+        Si no encuentras la categoria devuelve 'all'
         `
       },
       {
@@ -28,7 +30,7 @@ export function apiSend(msg){
   headers: {
   
     "Content-Type": "application/json",
-    "Authorization": "Bearer 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"
+    "Authorization": "Bearer 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"
   }
 }
 }
