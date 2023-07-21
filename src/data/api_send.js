@@ -29,7 +29,7 @@ export function apiSend(msg){
   headers: {
   
     "Content-Type": "application/json",
-    "Authorization": "Bearer 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"
+    "Authorization": "Bearer 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"
   }
 }
 }

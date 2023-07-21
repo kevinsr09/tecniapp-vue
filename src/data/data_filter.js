@@ -1,23 +1,29 @@
+import { data } from './data'
+import { categories } from './categories'
+const categorias = categories()
 
-export function dataFilter(data, category, categories){
+export function dataFilter(category='all'){
+  
+  const datos = data()
   
   if(category == 'all'){
-   
-    const categoriesValues = Object.values(categories)
-    const categoriesKeys = Object.keys(categories)
-    const categoriesLength = Object.keys(categories).length
-
-    for(let i = 0; i < data.length; i++){
     
-      for(let j = 0; j < categoriesLength; j++){
+    const categoriasValues = Object.values(categorias)
+    const categoriasKeys = Object.keys(categorias)
+    const categoriasLength = Object.keys(categorias).length
+    
+    for(let i = 0; i < datos.length; i++){
       
-        if(data[i].categoria == categoriesKeys[j]){
-          data[i].categoria = categoriesValues[j]
+      for(let j = 0; j < categoriasLength; j++){
+        
+        if(datos[i].categoria == categoriasKeys[j]){
+          datos[i].categoria = categoriasValues[j]
         }
       }
-      return data
     }
+    return datos
+    
   }else{
-    return data.filter(tec => tec.categoria == category).filter(tec => tec.categoria = categories[category])
+    return datos.filter(tec => tec.categoria == category).filter(tec => tec.categoria = categorias[category])
   }
 }

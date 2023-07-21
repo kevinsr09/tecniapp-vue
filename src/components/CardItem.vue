@@ -40,7 +40,7 @@ export default {
   <article >
 
     <picture class="item-picture">
-      <img :src="img" class="picture-img" alt="Imagen del negocio">
+      <img :src="img" class="picture-img" alt="Imagen del negocio" loading="lazy">
     </picture>
     
 

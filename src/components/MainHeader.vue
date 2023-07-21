@@ -159,7 +159,7 @@ header{
 .form-search-submit img{
 
   display: block;
-  width: clamp(1rem,60%, 3rem);
+  width: clamp(2rem,60%, 3rem);
   height: auto;
 
 }

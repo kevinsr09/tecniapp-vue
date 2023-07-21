@@ -122,8 +122,15 @@ ul{
 .content::-webkit-scrollbar-thumb{
   
   border-radius: 1rem;
-
+  
   background-color: #6DCDB9;
+}
+
+.content::-webkit-scrollbar-button{
+  width: 1rem;
+  height: .8rem;
+  border-radius: .2rem;
+  background-color: transparent;
 }
 
 
