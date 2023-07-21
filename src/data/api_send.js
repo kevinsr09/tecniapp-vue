@@ -8,16 +8,15 @@ export function apiSend(msg){
         "role": "system",
         "content": `clasifica el problema del usuario y me respondes solo con el codigo de la categoria:
         {
-          'reparacion de computadores': '0010', 
-          'reparacion de telefonos': '0020',
-          'reparacion de televisores': '0040',
-          'reparacion de neveras': '0050', 
-          'reparacion de lavadoras': '0060', 
-          'reparacion de estufas': '0080',
-          'accesorios para telefonos': '1010',
-        }
+          '0010': 'reparacion de computadores', 
+          '0020': 'reparacion de telefonos' ,
+          '0030': 'reparacion de tablets',
+          '0040': 'reparacion de software de telefonos', 
+          '0050': 'reparacion de software de computadoras', 
+          '0070': 'reparacion de display de telefonos' ,
+        } 
 
-        Si no encuentras la categoria devuelve 'all'
+        En cualquier otro caso responde con 'all'
         `
       },
       {
@@ -30,7 +29,7 @@ export function apiSend(msg){
   headers: {
   
     "Content-Type": "application/json",
-    "Authorization": "Bearer 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"
+    "Authorization": "Bearer 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"
   }
 }
 }

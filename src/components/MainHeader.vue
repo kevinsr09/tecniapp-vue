@@ -72,7 +72,7 @@ export default{
 header{
   display: flex;
   width: 100%;
-  height: 70px;
+  height: 80px;
   color: white;
   font-size: 2rem;
   border-bottom: 1px dashed #747474;
@@ -102,12 +102,22 @@ header{
 }
 
 .logo span{
+  
+  padding-left: .5rem;
+  padding-right: .5rem;
+  border-radius: .5rem;
+  border: 2px solid var(--text-color);
+  
   cursor:pointer;
-  transition: text-shadow .15s ease-in-out;
+  color: var(--text-color);
+  transition: background-color .3s ease, border .3s ease, color .3s ease;
+  
 }
-.logo span:hover {
-  text-shadow: 2px 2px greenyellow, -2px -2px  greenyellow;
 
+.logo span:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border: 2px dashed var(--bg-color);
 }
 .search{
   width: 50%;
@@ -115,30 +125,43 @@ header{
 }
 
 .form-search{
+  
   width: 80%;
-  height: 40px;
+  height: 55px;
+  border-radius: 5px;
+  border: 2px solid var(--text-color);
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  border: 1px dashed #747474;
+  
+  transition: border 2s ease;
   
 }
 
 .form-search-submit{
   width: 10%;
   height: 100%;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
   color: white;
   background-color: var(--second-bg-color);
   border-radius: 0 5px 5px 0;
   transition: background-color 0.1s ease-in-out;
-  border: none;
+
 }
 
 .form-search-submit img{
 
-  width: 100%;
+  display: block;
+  width: clamp(1rem,60%, 3rem);
   height: auto;
+
 }
 
 
@@ -146,7 +169,7 @@ header{
   width: 90%;
   height: 100%;
   display: block;
-  color: white;
+  color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 
@@ -156,9 +179,13 @@ header{
   border: none;
   font-size: clamp(.7rem, 5vw, 1rem);
   padding-left: 1rem;
+  outline: none;
 }
-.form-search:hover {
-  border: 1px dashed greenyellow
+
+
+
+.form-search:hover{
+  border: 2px dashed var(--text-color)
 }
 </style>
 

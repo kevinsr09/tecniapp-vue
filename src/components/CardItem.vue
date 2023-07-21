@@ -81,12 +81,13 @@ article{
   justify-content: center;
   align-items: center;
   
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
 }
 
 article:hover{
 
-  box-shadow: 0px 0px 12px #9a999980;
+  box-shadow: 2px 2px 12px var(--text-color);
+  transform: scale(1.01);
 
 }
 
@@ -135,7 +136,7 @@ article:hover{
   text-align: center;
   text-transform: capitalize;
   
-  color: greenyellow;
+  color: var(--text-color);
 
 }
 

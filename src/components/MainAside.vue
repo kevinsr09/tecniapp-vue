@@ -10,20 +10,19 @@ export default {
 
     <ul>
 
-      <li class="aside-li-item"><a>reparacion de televisores</a></li>
-      <li class="aside-li-item"><a>reparacion de neveras</a></li>
-      <li class="aside-li-item"><a>reparacion de estufas</a></li>
-      <li class="aside-li-item"><a>reparacion de lavadoras</a></li>
-      <li class="aside-li-item"><a>reparacion de computadores</a></li>
-      <li class="aside-li-item"><a>reparacion de telefonos</a></li>
-      <li class="aside-li-item"><a>accesorios para telefonos</a></li>
+      <li class="aside-li-item"><a>RP. Computadores</a></li>
+      <li class="aside-li-item"><a>RP. telefonos</a></li>
+      <li class="aside-li-item"><a>RP. tablets</a></li>
+      <li class="aside-li-item"><a>RP. software de telefonos</a></li>
+      <li class="aside-li-item"><a>RP. software de computadoras</a></li>
+      <li class="aside-li-item"><a>RP. display de telefonos</a></li>
+
     </ul>
 
 
   </aside>
 
 </template>
-
 
 <style scoped>
 
@@ -60,7 +59,7 @@ ul{
 .aside-li-item a{
   display: block;
   width: 100%;
-  text-align: center;
+  text-align: start;
   padding: 10px;
   color: white;
   cursor: pointer;

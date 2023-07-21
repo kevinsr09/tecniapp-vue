@@ -66,6 +66,7 @@ export default{
   --bg-color2:rgb(24, 22, 22);
   --bg-color3:#1D1E26;
   --bg-color4:#282A36;
+  --text-color: #6DCDB9;
   
 }
 
@@ -88,11 +89,12 @@ body{
 
   padding: 0;
   margin: 0;
+  max-height: 100vh;
+  overflow: hidden;
   
   background-color: var(--bg-color);
 
 }
-
 
 
 ul{
@@ -105,15 +107,23 @@ ul{
 .content{
 
   width: calc(100% - clamp(200px, 22vw,250px));
-  height: calc(100vh - 70px);
-  padding: 20px;
+  height: calc(100vh - 80px);
+  padding: 1.5rem 2.5rem;
 
   overflow-y: scroll;
+  
+}
 
-  display:flex;
-  gap:20px;
-  flex-wrap: wrap;
+.content::-webkit-scrollbar{
+  width: .5rem;
 
+}
+
+.content::-webkit-scrollbar-thumb{
+  
+  border-radius: 1rem;
+
+  background-color: #6DCDB9;
 }
 
 

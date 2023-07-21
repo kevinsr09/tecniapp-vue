@@ -3,13 +3,12 @@ export function data() {
 
   /*
   {
-    'reparacion de computadores': '0010', 
-    'reparacion de telefonos': '0020',
-    'reparacion de televisores': '0040',
-    'reparacion de neveras': '0050', 
-    'reparacion de lavadoras': '0060', 
-    'reparacion de estufas': '0080',
-    'accesorios para telefonos': '1010',
+    '0010': 'reparacion de computadores', 
+    '0020': 'reparacion de telefonos' ,
+    '0030': 'reparacion de tablets',
+    '0040': 'reparacion de software de telefonos', 
+    '0050': 'reparacion de software de computadoras', 
+    '0070': 'reparacion de display de telefonos' ,
   } 
   */
 
@@ -36,7 +35,7 @@ export function data() {
   
   {
     id: 2,
-    nombreTaller: 'TVTEC',
+    nombreTaller: 'telsoft',
     descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
     empleados:[
       {
@@ -56,7 +55,7 @@ export function data() {
 
   {
     id: 3,
-    nombreTaller: 'Estufas Del Tolima SAS',
+    nombreTaller: 'displays del tolima',
     descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
     empleados:[
       {
@@ -70,13 +69,13 @@ export function data() {
         area: 'Oficina',
       }
     ],
-    categoria: '0080',
+    categoria: '0070',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 4,
-    nombreTaller: 'La Casa Del Telefonos',
+    nombreTaller: 'La Casa Del Telefono',
     descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
     empleados:[
       {
@@ -116,7 +115,7 @@ export function data() {
 
   {
     id: 6,
-    nombreTaller: 'Multi Accesorios',
+    nombreTaller: 'Multi tablet',
     descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
     empleados:[
       {
@@ -130,13 +129,13 @@ export function data() {
         area: 'Oficina',
       }
     ],
-    categoria: '1010',
+    categoria: '0030',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 7,
-    nombreTaller: 'Expertos Multimarca',
+    nombreTaller: 'Expertos del software',
     descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
     empleados:[
       {
@@ -150,13 +149,13 @@ export function data() {
         area: 'Oficina',
       }
     ],
-    categoria: '0060',
+    categoria: '0050',
     img: 'https://via.placeholder.com/200x200',
   },
 
   {
     id: 8,
-    nombreTaller: 'Neve Tecnology',
+    nombreTaller: 'new Tecnology',
     descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
     empleados:[
       {
@@ -196,7 +195,7 @@ export function data() {
 
   {
     id: 10,
-    nombreTaller: 'Reparacion De Televisores Saras',
+    nombreTaller: 'virus tel',
     descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident accusantium temporibus numquam voluptatibus libero qui est, molestias ab suscipit rerum.',
     empleados:[
       {
